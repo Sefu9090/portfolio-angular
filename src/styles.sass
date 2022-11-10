@@ -1,1 +1,375 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+$primary: #0984e3
+$black: #2d3436
+$body-color: #2d3436
+$carousel-control-opacity: 50%
+$carousel-control-color: $primary
+$show: block
+
+@import 'bootstrap/scss/bootstrap'
+@import 'bootstrap-icons/font/bootstrap-icons.css'
+
+$layout-breakpoint-small: 1000px
+$layout-breakpoint-medium: 1399px
+$layout-breakpoint-large: 1400px
+
+
+html
+    text-align: center
+
+.default_color_text 
+    color: #0984e3 !important
+
+.default_color_bg
+    background-color: $primary
+
+.text_h
+    padding: 15% 0
+    font-size: 6.0em
+    font-weight: 100
+    color: white
+
+.text_h1
+    font-weight: 120
+    margin: 5% auto
+    line-height: 5rem
+    color: #2d3436
+
+.text_h2
+    font-weight: 100
+    margin: 4% auto
+    line-height: 4.5rem
+    color: #2d3436
+
+.text_h3
+    font-weight: 80
+    margin-bottom: 3%
+    margin: 3% auto
+    line-height: 4rem
+    color: #2d3436
+
+.text_h4
+    font-weight: 60
+    margin: 2% auto
+    line-height: 3.5rem
+    color: #2d3436
+
+.text_h5
+    font-weight: 40
+    margin: 1% auto
+    line-height: 2.5rem
+    color: #2d3436
+
+.text_h6
+    font-weight: 20
+    margin-bottom: 0.5%
+    line-height: 2rem
+    color: #2d3436
+
+.center, .center-align 
+  text-align: center
+
+.animated
+    -webkit-animation-duration: 5s
+    animation-duration: 5s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+
+
+canvas 
+    // display: $show 
+    position: absolute 
+    top: 0
+    left: 0
+    width: 100%
+    max-height: 100%
+    z-index: -1
+
+
+.toast
+    z-index: 10
+    position: fixed
+    bottom: 10vh
+    right: 2vw
+
+.nav_132-fixed 
+    top: 64px
+    z-index: 100
+    position: fixed
+
+@media (max-width: $layout-breakpoint-small)
+
+    .brand-logo
+        font-size: 2.5rem
+        padding: 20px 0
+
+    .large 
+        height: 700px !important
+    
+    .card-title 
+        padding-top: 30px
+        font-size: 50px !important
+    
+    .waves 
+        height: 80px !important
+        min-height: 40px
+
+    .content 
+        height: 30vh
+    
+    #resume 
+        width: 100vw
+    
+    h1 
+        font-size: 24px
+    
+    p 
+        font-size: 24px
+    
+    #index-banner 
+        height: 60vh !important
+        position: relative
+    
+    canvas 
+        max-height: 60%
+
+    #nav_132 
+        top: 56px
+
+    
+    
+
+@media (min-width: 1000px) 
+    .for-small-displays 
+        display: none !important
+    
+
+
+    .timeline 
+        padding: 2rem
+    
+
+    .timeline:before 
+        left: calc(50% - 1px)
+        right: auto
+    
+
+    .timeline__item 
+        width: 44%
+        margin: 1rem
+    
+
+    .timeline__item:nth-of-type(2n) 
+        float: right
+        margin: 1rem
+        border-image: linear-gradient(to right, #0984e3 0%, white 100%)
+        border-image-slice: 1
+    
+
+    .timeline__item:nth-of-type(2n):before 
+        right: auto
+        left: -10px
+        border-color: transparent transparent #0984e3 #0984e3
+    
+
+    .timeline__item--year 
+        text-align: center
+        margin: 0 auto
+    
+
+    .timeline__item--year:nth-of-type(2n) 
+        float: none
+        margin: 0 auto
+        border-image: none
+    
+
+    .timeline__item--year:nth-of-type(2n):before 
+        display: none
+    
+
+    @-webkit-keyframes fadeInRightBig 
+        0% 
+            opacity: 0
+            -webkit-transform: translateX(100px)
+        
+
+        100% 
+            opacity: 1
+            -webkit-transform: translateX(0)
+        
+    
+
+    @keyframes fadeInRightBig 
+        0% 
+            opacity: 0
+            transform: translateX(100px)
+        
+
+        100% 
+            opacity: 1
+            transform: translateX(0)
+        
+    
+
+    .fadeInRightBig 
+        -webkit-animation-name: fadeInRightBig
+        animation-name: fadeInRightBig
+    
+
+    @-webkit-keyframes fadeInDownBig 
+        0% 
+            opacity: 0
+            -webkit-transform: translateY(-100px)
+        
+
+        100% 
+            opacity: 1
+            -webkit-transform: translateY(0)
+        
+    
+
+    @keyframes fadeInDownBig 
+        0% 
+            opacity: 0
+            transform: translateY(-100px)
+        
+
+        100% 
+            opacity: 1
+            transform: translateY(0)
+        
+    
+
+    .fadeInDownBig 
+        -webkit-animation-name: fadeInDownBig
+        animation-name: fadeInDownBig
+    
+
+    @-webkit-keyframes fadeInLeftBig 
+        0% 
+            opacity: 0
+            -webkit-transform: translateX(-100px)
+        
+
+        100% 
+            opacity: 1
+            -webkit-transform: translateY(0)
+        
+    
+
+    @keyframes fadeInLeftBig 
+        0% 
+            opacity: 0
+            transform: translateX(-100px)
+        
+
+        100% 
+            opacity: 1
+            transform: translateY(0)
+        
+    
+
+    .fadeInLeftBig 
+        -webkit-animation-name: fadeInLeftBig
+        animation-name: fadeInLeftBig
+    
+
+    @-webkit-keyframes fadeInUpBig 
+        0% 
+            opacity: 0
+            -webkit-transform: translateY(100px)
+        
+
+        100% 
+            opacity: 1
+            -webkit-transform: translateY(0)
+        
+    
+
+    @keyframes fadeInUpBig 
+        0% 
+            opacity: 0
+            transform: translateY(100px)
+        
+
+        100% 
+            opacity: 1
+            transform: translateY(0)
+        
+    
+
+    .fadeInUpBig 
+        -webkit-animation-name: fadeInUpBig
+        animation-name: fadeInUpBig
+    
+
+
+
+@media only screen and (max-width: 1599px) 
+    .for-large-displays 
+        display: none !important
+    
+
+
+/* @media only screen and (max-width: 999px) 
+    .for-medium-displays 
+        display: none !important
+    
+ */
+
+@media only screen and (min-width: 1600px) 
+    .for-medium-displays 
+        display: none !important
+    
+
+
+.cd-headline.type
+    .cd-words-wrapper
+        vertical-align: top
+        overflow: hidden
+
+        &::after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            bottom: auto
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+            transform: translateY(-50%)
+            height: 90%
+            width: 1px
+            background-color: #aebcb9
+
+        &.waiting::after
+            -webkit-animation: cd-pulse 10s infinite
+            -moz-animation: cd-pulse 10s infinite
+            animation: cd-pulse 10s infinite
+
+        &.selected
+            background-color: #FFF
+            b
+                color: #0984e3
+        &::after
+            visibility: hidden
+
+
+    b
+        visibility: hidden
+
+        &.is-visible
+            color: #fff
+            visibility: visible
+
+    i
+        position: absolute
+        visibility: hidden
+        font-style: normal
+
+        &.in
+            position: relative
+            visibility: visible
+
+

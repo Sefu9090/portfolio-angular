@@ -1,0 +1,16 @@
+
+
+<ngb-toast
+	header=""
+	[delay]="9000"
+	[autohide]="autohide"
+	(mouseenter)="autohide = false"
+	(mouseleave)="autohide = true"
+	(hide)="show = false; autohide = true"
+>
+	<div>Hello, Thank you for Visting. Any support is appreciated</div>
+	<!-- <div *ngIf="!autohide">I will remain visible until you leave again.</div> -->
+    <div class="mt-2 pt-2 border-top">
+        <a href="https://www.buymeacoffee.com/sefu" type="button" class="btn btn-primary btn-sm">Buy Me a Coffee</a>
+      </div>
+</ngb-toast>

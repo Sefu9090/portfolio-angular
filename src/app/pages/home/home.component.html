@@ -1,0 +1,99 @@
+<div id="sketch-holder"></div>
+
+<app-sub-banner [full]=true></app-sub-banner>
+
+<div id="about"></div>
+<div id="intro" class="section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="center header text_h2">
+                    I am a <span class="span_h2">UX-UI</span> Designer & Front End Developer from Los Angeles, CA.
+                    With <span class="span_h2">Seven years of experience</span>, I have been able to find what I am
+                    <span class="span_h2">passionate</span> about, User Experience and Design. I am a casual
+                    photographer and also enjoy analyzing movies and music. I am a <span class="span_h2">Recent
+                        Graduate</span> from the University of California, Irvine.
+                </h2>
+            </div>
+            <div id="education"></div>
+            <div id="slide1" class="col-lg-4 animated fadeInLeftBig ">
+                <div class="center portfolio">
+                    <i class="bi bi-book"></i>
+                    <h5 class="portfolio-caption">Education</h5>
+                    <p class="light center">I am a recent graduate with a B.S. in Informatics from the University of
+                        California, Irvine with a minor in Education. I chose informatics because I enjoy designing
+                        and being in informatics allows me to learn about the design process. </p>
+                </div>
+            </div>
+            <div id="slide2" class="col-lg-4 animated  fadeInDownBig">
+                <div class="center portfolio">
+                    <i class="bi bi-clock-history"></i>
+                    <h5 class="portfolio-caption">Experience</h5>
+                    <p class="light center">I have been creating and designing websites since the 11th grade. I now
+                        have 7 years of experience. During this time I have learned 10+ programming languages.</p>
+                </div>
+            </div>
+            <div id="slide3" class="col-lg-4 animated  fadeInRightBig ">
+                <div class="center portfolio">
+                    <i class="bi bi-briefcase"></i>
+                    <h5 class="portfolio-caption">Endgame</h5>
+                    <p class="light center">I hope to be able to provide my future employer with the set of skills
+                        I've gained over the years. I am excited to work developing progressive and intuitive UI and
+                        UX.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="center header text_h2">Projects</h2>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                    (slide)="onSlide($event)" class="carousel center project-carousel">
+                    <ng-template class="height-fix-carousel" ngbSlide *ngFor="let card of cards">
+                        <div class="carousel-caption">
+                            <h3 class="text-shadow">{{card["name"]}}</h3>
+                        </div>
+                        <a [href]="card['link']" 
+                            rel="nofollow noopener noreferrer">
+                            <div class="project-img-wrapper">
+                                <img class="index-img" [src]="card['img']" [alt]="card['imgAlt']">
+                            </div>
+                        </a>
+                    </ng-template>
+                </ngb-carousel>
+                <!-- <div class="carousel carousel-slider center project-carousel">
+
+                    <div class="carousel-item black-text" href="#one!">
+                        <a href="Projects/PMMC.html"><img class="index-img" src="img/PMMC.png"
+                                alt="Screen Shot of Game Marine Mammal Mania"></a>
+                        <h2>Marine Mammal Mania</h2>
+
+                    </div>
+                    <div class="carousel-item black-text" href="#two!">
+                        <a href="Projects/117project.html"><img class="index-img" src="img/Music-notation.png"
+                                alt="Screen Shot of Music Notation protoype"></a>
+                        <h2>Music Notation</h2>
+
+                    </div>
+                    <div class="carousel-item black-text" href="#three!">
+                        <a href="Projects/132project.html"><img class="index-img" src="img/MobilityMaps.png"
+                                alt="Screen Shot of Mobility Maps protoype"></a>
+                        <h2>Mobility Maps</h2>
+
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col m4 s12 center">
+            </div>
+            <div class="col m4 s12 center">
+                <a class="btn waves-effect white-text pulse  default_color" href="/projects.html">Projects</a>
+            </div>
+        </div> -->
+    </div>
+</div>

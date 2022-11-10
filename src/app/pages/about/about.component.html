@@ -1,0 +1,27 @@
+<app-sub-banner [data]="'About Saul.'"></app-sub-banner>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <h3 class="center text_h3">
+                Over the course of my college career, I have worked with various languages and platforms some for
+                school and others for my personal interests. Since before college I have been working with HTML CSS
+                and Javascript totaling 7 years of experience. Since then I have learned various new and powerful
+                Frameworks such as Angular and React I have been using these for more than 3 years. UI and UX are
+                recent passions of mine and resulted in me switching my major to Informatics to get more experience
+                and respect for Human-Computer interaction.
+            </h3>
+        </div>
+        <div class="row"> 
+            <div class="col center">
+                <button type="button" class="btn btn-outline-primary" (click)="openModalAbout();">View My Resume</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal_about" [ngClass]="{'hidden': isHidden }" class="modal_about">
+    <button type="button" class="close cursor btn-close btn-close-white" (click)="closeModalAbout()" aria-label="Close"></button>        
+    <iframe id="resume" class="center image-contain" src="assets/files/Saul_Fernandez_Resume.pdf#view=fit"></iframe>
+</div>
+
