@@ -19,8 +19,8 @@
             <div id="slide1" class="col-lg-4 animated fadeInLeftBig ">
                 <div class="center portfolio">
                     <i class="bi bi-book"></i>
-                    <h5 class="portfolio-caption">Education</h5>
-                    <p class="light center">I am a recent graduate with a B.S. in Informatics from the University of
+                    <h5 class="portfolio-caption text_h5">Education</h5>
+                    <p class="light center text_h6">I am a recent graduate with a B.S. in Informatics from the University of
                         California, Irvine with a minor in Education. I chose informatics because I enjoy designing
                         and being in informatics allows me to learn about the design process. </p>
                 </div>
@@ -28,16 +28,16 @@
             <div id="slide2" class="col-lg-4 animated  fadeInDownBig">
                 <div class="center portfolio">
                     <i class="bi bi-clock-history"></i>
-                    <h5 class="portfolio-caption">Experience</h5>
-                    <p class="light center">I have been creating and designing websites since the 11th grade. I now
+                    <h5 class="portfolio-caption text_h5">Experience</h5>
+                    <p class="light center text_h6">I have been creating and designing websites since the 11th grade. I now
                         have 7 years of experience. During this time I have learned 10+ programming languages.</p>
                 </div>
             </div>
             <div id="slide3" class="col-lg-4 animated  fadeInRightBig ">
                 <div class="center portfolio">
                     <i class="bi bi-briefcase"></i>
-                    <h5 class="portfolio-caption">Endgame</h5>
-                    <p class="light center">I hope to be able to provide my future employer with the set of skills
+                    <h5 class="portfolio-caption text_h5">Endgame</h5>
+                    <p class="light center text_h6">I hope to be able to provide my future employer with the set of skills
                         I've gained over the years. I am excited to work developing progressive and intuitive UI and
                         UX.</p>
                 </div>
@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="center header text_h2">Projects</h2>
-                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" data-touch="true" [pauseOnFocus]="pauseOnFocus"
                     (slide)="onSlide($event)" class="carousel center project-carousel">
                     <ng-template class="height-fix-carousel" ngbSlide *ngFor="let card of cards">
                         <div class="carousel-caption">

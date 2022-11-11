@@ -29,11 +29,12 @@ export class ProjectPageComponent implements OnInit {
                 this.router.navigateByUrl('Projects');
             }
             else{
-                if (!this.data){
+                console.log(this.project.sourceCode)
+                if (this.project.sourceCode == ""){
                     this.data = "<h1 class='text_h1'>COMING SOON</h1>"
                 }
                 else{
-                this.data = this.sanitizer.bypassSecurityTrustHtml(this.project.sourceCode);
+                    this.data = this.sanitizer.bypassSecurityTrustHtml(this.project.sourceCode);
                 };
                 
                 this.projectTitle = this.project.name;
