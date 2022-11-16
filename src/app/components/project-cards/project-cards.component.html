@@ -1,14 +1,14 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col" *ngFor="let card of cards; let i=index">
+<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
+    <div class="col" *ngFor="let card of cards_js; let i=index">
         <div class="card h-100">
-            <img [src]="card.img" class="card-img-top thumbnail" data-toggle="lightbox" data-gallery="project-gallery" [alt]="card.imgAlt" (click)="open(i)">
+            <img [src]="card['img']" class="card-img-top thumbnail" data-toggle="lightbox" data-gallery="project-gallery" [alt]="card['imgAlt']" (click)="open(i)">
             <div class="card-body">
-                <h5 class="card-title">{{card.name}}</h5>
-                <p class="card-text">{{card.discription}}</p>
+                <h5 class="card-title text_h5">{{card['name']}}</h5>
+                <p class="card-text text_h6">{{card['discription']}}</p>
             </div>
-            <a *ngIf="card.link" [href]="card.link" class="btn btn-primary link-btn">About {{card.name}}</a>
+            <a *ngIf="card['link']" [href]="card['link']" class="btn btn-primary link-btn">About {{card['name']}}</a>
             <div class="card-footer">
-                <small class="text-muted">Last updated {{card.updated}}</small>
+                <small class="text-muted">Last updated {{card['updated']}}</small>
             </div>
             
             

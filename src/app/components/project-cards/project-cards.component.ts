@@ -8,16 +8,19 @@ import { Lightbox } from 'ngx-lightbox';
     styleUrls: ['./project-cards.component.sass']
 })
 export class ProjectCardsComponent implements OnInit {
-    @Input() cards: any;
+    @Input() cards_location: any;
+    cards_js = []
     public _albums: any = [];
 
     constructor(private _lightbox: Lightbox) { }
 
     ngOnInit(): void {
-        for (var card of this.cards) {
-            console.log(card)
-            const src = card.img;
-            const caption = card.discription;
+        fetch(this.cards_location).then(res => res.json())
+        .then(jsonData => {
+          this.cards_js = jsonData;
+          for (var card of this.cards_js) {
+            const src = card["img"];
+            const caption = card["discription"];
             const album = {
                 src: src,
                 caption: caption,
@@ -25,6 +28,8 @@ export class ProjectCardsComponent implements OnInit {
             };
             this._albums.push(album);
         }
+        });
+        
     }
     open(index: number): void { // open lightbox 
         this._lightbox.open(this._albums, index);
