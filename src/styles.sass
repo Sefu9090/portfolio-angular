@@ -14,410 +14,458 @@ $layout-breakpoint-medium: 1399px
 $layout-breakpoint-large: 1400px
 
 
-html
-    text-align: center
-    
-
-
-.default_color_text 
-    color: #0984e3 !important
+.default_color_text
+	color: #0984e3 !important
 
 .default_color_bg
-    background-color: $primary
+	background-color: $primary
 
 .text_h
-    padding: 20% 0
-    font-size: 6.0em
-    font-weight: 100
-    color: white
+	padding: 20% 0
+	font-size: 6.0em
+	font-weight: 100
+	color: white
 
 .text_h1
-    font-weight: 120
-    margin: 5% auto
-    line-height: 5rem
-    color: #2d3436
+	font-weight: 120
+	margin: 5% auto
+	line-height: 5rem
+	color: #2d3436
 
 .text_h2
-    font-weight: 110
-    margin: 4% auto
-    line-height: 4.5rem
-    color: #2d3436
+	font-weight: 110
+	margin: 4% auto
+	line-height: 4.5rem
+	color: #2d3436
 
 .text_h3
-    font-weight: 100
-    margin-bottom: 3%
-    margin: 3% auto
-    line-height: 4rem
-    color: #2d3436
+	font-weight: 100
+	margin-bottom: 3%
+	margin: 3% auto
+	line-height: 4rem
+	color: #2d3436
 
 .text_h4
-    font-weight: 90
-    margin: 2% auto
-    line-height: 3.5rem
-    color: #2d3436
+	font-weight: 90
+	margin: 2% auto
+	line-height: 3.5rem
+	color: #2d3436
 
 .text_h5
-    font-weight: 80
-    margin: 1% auto
-    line-height: 2.5rem
-    color: #2d3436
+	font-weight: 80
+	margin: 1% auto
+	line-height: 2.5rem
+	color: #2d3436
 
 .text_h6
-    font-weight: 70
-    margin-bottom: 0.5%
-    line-height: 2rem
-    color: #2d3436
+	font-weight: 70
+	margin-bottom: 0.5%
+	line-height: 2rem
+	color: #2d3436
 
-.center, .center-align 
-  text-align: center
+.center, .center-align
+	text-align: center
 
 .animated
-    -webkit-animation-duration: 5s
-    animation-duration: 5s
-    -webkit-animation-fill-mode: both
-    animation-fill-mode: both
+	-webkit-animation-duration: 5s
+	animation-duration: 5s
+	-webkit-animation-fill-mode: both
+	animation-fill-mode: both
 
-
-canvas 
-    // display: $show 
-    position: absolute 
-    top: 0
-    left: 0
-    width: 100%
-    max-height: 100%
-    z-index: -1
-
+canvas
+	// display: $show 
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	max-height: 100%
+	z-index: -1
 
 .toast
-    z-index: 10
-    position: fixed
-    bottom: 10vh
-    right: 2vw
+	z-index: 10
+	position: fixed
+	bottom: 10vh
+	right: 2vw
 
-.nav_132-fixed 
-    top: 64px
-    z-index: 100
-    position: fixed
+.nav_132-fixed
+	top: 64px
+	z-index: 100
+	position: fixed
 
 @media (max-width: $layout-breakpoint-small)
 
-    .brand-logo
-        font-size: 2.5rem
-        padding: 20px 0
+	.brand-logo
+		font-size: 2.5rem
+		padding: 20px 0
 
-    .large 
-        height: 700px !important
-    
-    .card-title 
-        padding-top: 30px
-        font-size: 30px !important
-    
-    .waves 
-        height: 80px !important
-        min-height: 40px
+	.large
+		height: 700px !important
 
-    .text_h
-        font-size: 4em
+	.card-title
+		padding-top: 30px
+		font-size: 30px !important
 
-    .text_h1
-        font-weight: 120
-        margin: 5% auto
-        line-height: 5rem
-        color: #2d3436
+	.waves
+		height: 80px !important
+		min-height: 40px
 
-    .text_h2
-        font-weight: 110
-        margin: 4% auto
-        line-height: 4.5rem
-        color: #2d3436
+	.text_h
+		font-size: 4em
 
-    .text_h3
-        font-weight: 100
-        margin-bottom: 3%
-        margin: 3% auto
-        line-height: 4rem
-        color: #2d3436
+	.text_h1
+		font-weight: 120
+		margin: 5% auto
+		line-height: 5rem
+		color: #2d3436
 
-    .text_h4
-        font-weight: 90
-        margin: 2% auto
-        line-height: 3.5rem
-        color: #2d3436
+	.text_h2
+		font-weight: 110
+		margin: 4% auto
+		line-height: 4.5rem
+		color: #2d3436
 
-    .text_h5
-        font-weight: 80
-        margin: 1% auto
-        line-height: 2.5rem
-        color: #2d3436
+	.text_h3
+		font-weight: 100
+		margin-bottom: 3%
+		margin: 3% auto
+		line-height: 4rem
+		color: #2d3436
 
-    .text_h6
-        font-weight: 70
-        font-size: 27
-        margin-bottom: 0.5%
-        line-height: 2rem
-        color: #2d3436
+	.text_h4
+		font-weight: 90
+		margin: 2% auto
+		line-height: 3.5rem
+		color: #2d3436
 
-    .content 
-        height: 30vh
-    
-    #resume 
-        width: 100vw
-    
-    h1 
-        font-size: 24px
-    
-    p 
-        font-size: 24px
-    
-    #index-banner 
-        padding-top: 40%
-    
-    // canvas 
-    //     max-height: 60%
+	.text_h5
+		font-weight: 80
+		margin: 1% auto
+		line-height: 2.5rem
+		color: #2d3436
 
-    #nav_132 
-        top: 56px
+	.text_h6
+		font-weight: 70
+		font-size: 27
+		margin-bottom: 0.5%
+		line-height: 2rem
+		color: #2d3436
 
-    .project-carousel
-        height: 400px !important
+	.content
+		height: 30vh
 
-    .project-carousel div
-        height: 400px !important
+	#resume
+		width: 100vw
 
-    
-    
+	h1
+		font-size: 24px
 
-@media (min-width: 1000px) 
-    .for-small-displays 
-        display: none !important
-    
+	p
+		font-size: 24px
 
+	#index-banner
+		padding-top: 40%
 
-    .timeline 
-        padding: 2rem
-    
+	// canvas 
+	//     max-height: 60%
 
-    .timeline:before 
-        left: calc(50% - 1px)
-        right: auto
-    
+	#nav_132
+		top: 56px
 
-    .timeline__item 
-        width: 44%
-        margin: 1rem
-    
+	.project-carousel
+		height: 400px !important
 
-    .timeline__item:nth-of-type(2n) 
-        float: right
-        margin: 1rem
-        border-image: linear-gradient(to right, #0984e3 0%, white 100%)
-        border-image-slice: 1
-    
+	.project-carousel div
+		height: 400px !important
 
-    .timeline__item:nth-of-type(2n):before 
-        right: auto
-        left: -10px
-        border-color: transparent transparent #0984e3 #0984e3
-    
+@media (min-width: 1000px)
+	.for-small-displays
+		display: none !important
 
-    .timeline__item--year 
-        text-align: center
-        margin: 0 auto
-    
+	.timeline
+		padding: 2rem
 
-    .timeline__item--year:nth-of-type(2n) 
-        float: none
-        margin: 0 auto
-        border-image: none
-    
+	.timeline:before
+		left: calc(50% - 1px)
+		right: auto
 
-    .timeline__item--year:nth-of-type(2n):before 
-        display: none
-    
+	.timeline__item
+		width: 44%
+		margin: 1rem
 
-    @-webkit-keyframes fadeInRightBig 
-        0% 
-            opacity: 0
-            -webkit-transform: translateX(100px)
-        
+	.timeline__item:nth-of-type(2n)
+		float: right
+		margin: 1rem
+		border-image: linear-gradient(to right, #0984e3 0%, white 100%)
+		border-image-slice: 1
 
-        100% 
-            opacity: 1
-            -webkit-transform: translateX(0)
-        
-    
+	.timeline__item:nth-of-type(2n):before
+		right: auto
+		left: -10px
+		border-color: transparent transparent #0984e3 #0984e3
 
-    @keyframes fadeInRightBig 
-        0% 
-            opacity: 0
-            transform: translateX(100px)
-        
+	.timeline__item--year
+		text-align: center
+		margin: 0 auto
 
-        100% 
-            opacity: 1
-            transform: translateX(0)
-        
-    
+	.timeline__item--year:nth-of-type(2n)
+		float: none
+		margin: 0 auto
+		border-image: none
 
-    .fadeInRightBig 
-        -webkit-animation-name: fadeInRightBig
-        animation-name: fadeInRightBig
-    
+	.timeline__item--year:nth-of-type(2n):before
+		display: none
 
-    @-webkit-keyframes fadeInDownBig 
-        0% 
-            opacity: 0
-            -webkit-transform: translateY(-100px)
-        
+	@-webkit-keyframes fadeInRightBig
+		0% 
+		opacity: 0
+		-webkit-transform: translateX(100px)
 
-        100% 
-            opacity: 1
-            -webkit-transform: translateY(0)
-        
-    
+		100% 
+		opacity: 1
+		-webkit-transform: translateX(0)
 
-    @keyframes fadeInDownBig 
-        0% 
-            opacity: 0
-            transform: translateY(-100px)
-        
+	@keyframes fadeInRightBig
+		0%
+			opacity: 0
+			transform: translateX(100px)
 
-        100% 
-            opacity: 1
-            transform: translateY(0)
-        
-    
+		100%
+			opacity: 1
+			transform: translateX(0)
 
-    .fadeInDownBig 
-        -webkit-animation-name: fadeInDownBig
-        animation-name: fadeInDownBig
-    
+	.fadeInRightBig
+		-webkit-animation-name: fadeInRightBig
+		animation-name: fadeInRightBig
 
-    @-webkit-keyframes fadeInLeftBig 
-        0% 
-            opacity: 0
-            -webkit-transform: translateX(-100px)
-        
+	@-webkit-keyframes fadeInDownBig
+		0% 
+		opacity: 0
+		-webkit-transform: translateY(-100px)
 
-        100% 
-            opacity: 1
-            -webkit-transform: translateY(0)
-        
-    
+		100% 
+		opacity: 1
+		-webkit-transform: translateY(0)
 
-    @keyframes fadeInLeftBig 
-        0% 
-            opacity: 0
-            transform: translateX(-100px)
-        
+	@keyframes fadeInDownBig
+		0%
+			opacity: 0
+			transform: translateY(-100px)
 
-        100% 
-            opacity: 1
-            transform: translateY(0)
-        
-    
+		100%
+			opacity: 1
+			transform: translateY(0)
 
-    .fadeInLeftBig 
-        -webkit-animation-name: fadeInLeftBig
-        animation-name: fadeInLeftBig
-    
+	.fadeInDownBig
+		-webkit-animation-name: fadeInDownBig
+		animation-name: fadeInDownBig
 
-    @-webkit-keyframes fadeInUpBig 
-        0% 
-            opacity: 0
-            -webkit-transform: translateY(100px)
-        
+	@-webkit-keyframes fadeInLeftBig
+		0% 
+		opacity: 0
+		-webkit-transform: translateX(-100px)
 
-        100% 
-            opacity: 1
-            -webkit-transform: translateY(0)
-        
-    
+		100% 
+		opacity: 1
+		-webkit-transform: translateY(0)
 
-    @keyframes fadeInUpBig 
-        0% 
-            opacity: 0
-            transform: translateY(100px)
-        
+	@keyframes fadeInLeftBig
+		0%
+			opacity: 0
+			transform: translateX(-100px)
 
-        100% 
-            opacity: 1
-            transform: translateY(0)
-        
-    
+		100%
+			opacity: 1
+			transform: translateY(0)
 
-    .fadeInUpBig 
-        -webkit-animation-name: fadeInUpBig
-        animation-name: fadeInUpBig
-    
+	.fadeInLeftBig
+		-webkit-animation-name: fadeInLeftBig
+		animation-name: fadeInLeftBig
+
+	@-webkit-keyframes fadeInUpBig
+		0% 
+		opacity: 0
+		-webkit-transform: translateY(100px)
+
+		100% 
+		opacity: 1
+		-webkit-transform: translateY(0)
+
+	@keyframes fadeInUpBig
+		0%
+			opacity: 0
+			transform: translateY(100px)
+
+		100%
+			opacity: 1
+			transform: translateY(0)
+
+	.fadeInUpBig
+		-webkit-animation-name: fadeInUpBig
+		animation-name: fadeInUpBig
+
+@media only screen and (max-width: 1599px)
+	.for-large-displays
+		display: none !important
 
 
-
-@media only screen and (max-width: 1599px) 
-    .for-large-displays 
-        display: none !important
-    
-
-
-/* @media only screen and (max-width: 999px) 
-    .for-medium-displays 
-        display: none !important
-    
- */
-
-@media only screen and (min-width: 1600px) 
-    .for-medium-displays 
-        display: none !important
-    
-
+@media only screen and (min-width: 1600px)
+	.for-medium-displays
+		display: none !important
 
 .cd-headline.type
-    .cd-words-wrapper
-        vertical-align: top
-        overflow: hidden
+	.cd-words-wrapper
+		vertical-align: top
+		overflow: hidden
 
-        &::after
-            content: ''
-            position: absolute
-            right: 0
-            top: 50%
-            bottom: auto
-            -webkit-transform: translateY(-50%)
-            -moz-transform: translateY(-50%)
-            -ms-transform: translateY(-50%)
-            -o-transform: translateY(-50%)
-            transform: translateY(-50%)
-            height: 90%
-            width: 1px
-            background-color: #aebcb9
+		&::after
+			content: ''
+			position: absolute
+			right: 0
+			top: 50%
+			bottom: auto
+			-webkit-transform: translateY(-50%)
+			-moz-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			-o-transform: translateY(-50%)
+			transform: translateY(-50%)
+			height: 90%
+			width: 1px
+			background-color: #aebcb9
 
-        &.waiting::after
-            -webkit-animation: cd-pulse 10s infinite
-            -moz-animation: cd-pulse 10s infinite
-            animation: cd-pulse 10s infinite
+		&.waiting::after
+			-webkit-animation: cd-pulse 10s infinite
+			-moz-animation: cd-pulse 10s infinite
+			animation: cd-pulse 10s infinite
 
-        &.selected
-            background-color: #FFF
-            b
-                color: #0984e3
-        &::after
-            visibility: hidden
+		&.selected
+			background-color: #FFF
+			b
+				color: #0984e3
+		&::after
+			visibility: hidden
+
+	b
+		visibility: hidden
+
+		&.is-visible
+			color: #fff
+			visibility: visible
+
+	i
+		position: absolute
+		visibility: hidden
+		font-style: normal
+
+		&.in
+			position: relative
+			visibility: visible
 
 
-    b
-        visibility: hidden
+$defaultDuration: .3s
+$primaryColour: #ececec
+$secondaryColour: #666
+$shadowColour: rgba(0, 0, 0, .6)
 
-        &.is-visible
-            color: #fff
-            visibility: visible
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+@mixin hideTapHighlightColor()
+	//Prevent highlight colour when element is tapped
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
 
-    i
-        position: absolute
-        visibility: hidden
-        font-style: normal
+@mixin hardwareAccel()
+	//Improve performance on mobile/tablet devices
+	transform: translateZ(0)
 
-        &.in
-            position: relative
-            visibility: visible
+@mixin improveAntiAlias()
+	//Improve aliasing on mobile/tablet devices
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0)
 
 
+/* Hover */
+@keyframes hover
+	50%
+		transform: translateY(-3px)
+
+	100%
+		transform: translateY(-6px)
+
+.hover
+	transition-duration: .5s
+	transition-property: transform
+
+	@include hideTapHighlightColor()
+	@include hardwareAccel()
+	@include improveAntiAlias()
+
+	&:hover
+		transform: translateY(-6px)
+		animation-name: hover
+		animation-duration: 1.5s
+		animation-delay: .3s
+		animation-timing-function: linear
+		animation-iteration-count: infinite
+		animation-direction: alternate
+
+/* Hover Shadow */
+@keyframes hover2
+	50%
+		transform: translateY(-3px)
+
+	100%
+		transform: translateY(-6px)
+
+@keyframes hover-shadow
+	0%
+		transform: translateY(6px)
+		opacity: .4
+
+	50%
+		transform: translateY(3px)
+		opacity: 1
+
+	100%
+		transform: translateY(6px)
+		opacity: .4
+
+.hover-shadow
+	display: inline-block
+	position: relative
+	transition-duration: $defaultDuration
+	transition-property: transform
+
+	@include hideTapHighlightColor()
+	@include hardwareAccel()
+	@include improveAntiAlias()
+
+	&:before
+		pointer-events: none
+		position: absolute
+		z-index: -1
+		content: ''
+		top: 100%
+		left: 5%
+		height: 10px
+		width: 90%
+		opacity: 0
+		background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%)
+		transition-duration: $defaultDuration
+		transition-property: transform opacity
+
+	&:hover
+		transform: translateY(-6px)
+		animation-name: hover2
+		animation-duration: 1.5s
+		animation-delay: $defaultDuration
+		animation-timing-function: linear
+		animation-iteration-count: infinite
+		animation-direction: alternate
+
+		&:before
+			opacity: .4
+			transform: translateY(6px)
+			animation-name: hover-shadow
+			animation-duration: 1.5s
+			animation-delay: .3s
+			animation-timing-function: linear
+			animation-iteration-count: infinite
+			animation-direction: alternate
