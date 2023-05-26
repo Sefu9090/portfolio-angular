@@ -2,40 +2,40 @@
     <nav id="nav_f" class="default_color main-nav">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="/index.html" id="logo-container" class="brand-logo for-large-displays">Saul Emanuel
+                <a routerLink="/index.html" id="logo-container" class="brand-logo for-large-displays">Saul Emanuel
                     Fernandez Urdiano</a>
-                <a href="/index.html" id="logo-container" class="brand-logo for-medium-displays">Saul Fernandez</a>
+                <a routerLink="/index.html" id="logo-container" class="brand-logo for-medium-displays">Saul Fernandez</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/design.html">Designs & Concepts</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a routerLink="/about.html">About</a></li>
+                    <li><a routerLink="/design.html">Designs & Concepts</a></li>
+                    <li><a routerLink="/projects.html">Projects</a></li>
                 </ul>
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a routerLink="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </div>
     </nav>
 </div>
 <ul id="slide-out" class="sidenav">
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/design.html">Designs & Concepts</a></li>
-    <li><a href="/projects.html">Projects</a></li>
+    <li><a routerLink="/about.html">About</a></li>
+    <li><a routerLink="/design.html">Designs & Concepts</a></li>
+    <li><a routerLink="/projects.html">Projects</a></li>
 </ul> -->
 
 
 <nav id="nav_p" class="navbar fixed-top navbar-expand-lg bg-light default_color main-nav text-center">
     <div class="container">
-        <a href="/index" aria-current="page" id="logo-container" class="navbar-brand brand-logo for-large-displays">Saul Emanuel
+        <a routerLink="/index" aria-current="page" id="logo-container" class="navbar-brand brand-logo for-large-displays">Saul Emanuel
             Fernandez Urdiano</a>
-        <a href="/index" id="logo-container" class="navbar-brand brand-logo for-medium-displays">Saul Fernandez</a>
+        <a routerLink="/index" id="logo-container" class="navbar-brand brand-logo for-medium-displays">Saul Fernandez</a>
       <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
       <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="/About">About</a>
-          <!-- <a class="nav-link" href="/Design">Designs & Concepts</a> -->
-          <a class="nav-link" href="/Projects">Projects</a>
+          <a class="nav-link" routerLink="/About">About</a>
+          <!-- <a class="nav-link" routerLink="/Design">Designs & Concepts</a> -->
+          <a class="nav-link" routerLink="/Projects">Projects</a>
         </div>
       </div>
     </div>
