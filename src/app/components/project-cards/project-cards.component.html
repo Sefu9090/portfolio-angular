@@ -7,7 +7,7 @@
                 <h5 class="card-title text_h5">{{card['name']}}</h5>
                 <p class="card-text text_h6">{{card['discription']}}</p>
             </div>
-            <a *ngIf="card['link']" [routerLink]="card['link']" class="btn btn-primary link-btn">About {{card['name']}}</a>
+            <a *ngIf="card['link']" [href]="card['link']" class="btn btn-primary link-btn">About {{card['name']}}</a>
             <div class="card-footer">
                 <small class="text-muted">Last updated {{card['updated']}}</small>
             </div>
